@@ -45,14 +45,15 @@ document.querySelector('.home').onmouseleave = (e) =>{
 
 };
 
-var swiper = new Swiper(".vehicles-slider", {
+var swiper = new Swiper('.projects-slider', {
   grabCursor: true,
   centeredSlides: true,  
-  spaceBetween: 20,
+  spaceBetween: 10,
   loop:true,
   autoplay: {
-    delay: 9500,
+    delay: 3000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -63,13 +64,14 @@ var swiper = new Swiper(".vehicles-slider", {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1024: {
       slidesPerView: 3,
     },
   },
-});
+})
+
 
 const dropdowns = document.querySelectorAll('.dropdown');
 
@@ -104,31 +106,6 @@ dropdowns.forEach(dropdown => {
 });
 
 
-var swiper = new Swiper(".featured-slider", {
-  grabCursor: true,
-  centeredSlides: true,  
-  spaceBetween: 20,
-  loop:true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable:true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
 
 var swiper = new Swiper(".review-slider", {
   grabCursor: true,
@@ -138,6 +115,7 @@ var swiper = new Swiper(".review-slider", {
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   pagination: {
     el: ".swiper-pagination",
