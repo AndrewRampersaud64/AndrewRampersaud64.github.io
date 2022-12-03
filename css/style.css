@@ -55,7 +55,7 @@ section {
   width: 100%;
   background: var(--light-rose);
   z-index: -1;
-  clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0% 100%);
 }
 
 .btn {
@@ -105,7 +105,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: var(--rose);
+  color: white;
 }
 
 .header.active {
@@ -156,11 +156,16 @@ section {
 }
 
 
-
+.projects {
+  background-image: linear-gradient(to top, #ffffff,#d9dcff, #b8beffc7,#bac0ffb0, #e3c8ffe6, #e1d4f7da, #ddddfb, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+}
 
 .swiper-pagination-bullet-active {
   background: var(--rose);
+
 }
+
+
 
 .projects h2{
     margin-top: 5rem;
@@ -170,6 +175,16 @@ section {
 .projects h3{
     font-size: 2rem;
     color: #6d68a7;
+}
+
+.projects-web h2{
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: var(--black);
+}
+.projects-web h3{
+  font-size: 2rem;
+  color: #6d68a7;
 }
 
 .projects .projects-slider {
@@ -191,6 +206,10 @@ section {
 .projects .projects-slider .box video {
     height: 40rem;
   }
+
+  .projects-web .projects-slider .box video {
+    height: 40rem;
+  }
 .projects .projects-slider .swiper-slide-active {
     transform: scale(1.2);
   }
@@ -205,7 +224,7 @@ section {
   color: var(--black);
 }
 
-.projects .recipe-website-video video {
+.projects-web .recipe-website-video video {
     width: 100%;
     padding: 2rem 0rem;
 }
@@ -410,8 +429,8 @@ section {
 }
 
 .contact {
-  background: var(--light-rose);
-  padding-bottom: 8rem;
+  background: #9a85e7;
+  padding-bottom: 3rem;
 }
 
 .contact .box-container {
@@ -442,29 +461,11 @@ section {
   padding-right: 2rem;
 }
 
-.contact .credit {
-  text-align: center;
-  padding: 1.5rem;
-  padding-top: 2.5rem;
-  margin-top: 2rem;
-  border-top: var(--border);
-  font-size: 2rem;
-  color: var(--black);
-  
-}
-
-/* The search field when it gets focus/clicked on */
-#myInput:focus {
-  outline: 3px solid #ddd;
-}
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -474,7 +475,6 @@ section {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -482,12 +482,11 @@ section {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
 }
@@ -519,22 +518,26 @@ section {
     transform: rotate(180deg);
   }
 
-  #login-btn .btn {
-    display: none;
-  }
-
-  #login-btn i {
-    display: block;
-  }
-
   .header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
     right: 0;
-    background: #434974ca;
-
+    background: #272b45;
+    border-radius: 20px;
+    border: #00ddff91 solid 5px;
+    animation: flicker2 2s ease-in-out infinite alternate;
+    margin: 1rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  @keyframes flicker2 {
+    from {
+      border-color:  #00ddff91;
+    }
+    to {
+      border-color: #5a099c8a;
+    }
   }
 
   .header .navbar.active {
