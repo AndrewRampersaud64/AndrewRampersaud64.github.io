@@ -523,11 +523,12 @@ section {
     top: 99%;
     left: 0;
     right: 0;
-    background: #272b45;
-    border-radius: 20px;
+    background: var(--black);
+    border-radius: 10px;
     border: #00ddff91 solid 5px;
     animation: flicker2 2s ease-in-out infinite alternate;
     margin: 1rem;
+   
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
