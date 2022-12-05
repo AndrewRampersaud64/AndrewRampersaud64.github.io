@@ -1,10 +1,9 @@
 @charset "ISO-8859-1";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 :root {
-  --rose: #ab6dde;
-  --light-rose: #ab6dde;
+  --purple: #ab6dde;
+  --light-purple: #d9acff;
   --black: #130f40;
   --light-color: #666;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -19,7 +18,6 @@
   outline: none;
   border: none;
   text-decoration: none;
- 
   transition: 0.2s linear;
 }
 
@@ -53,26 +51,9 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--light-rose);
+  background: var(--light-purple);
   z-index: -1;
   clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0% 100%);
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 3rem;
-  background: var(--light-rose);
-  color: var(--black);
-  cursor: pointer;
-  font-size: 1.7rem;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  text-align: center;
-}
-
-.btn:hover {
-  background: var(--rose);
 }
 
 .header {
@@ -95,13 +76,13 @@ section {
 }
 
 .header .logo span {
-  color: var(--rose);
+  color: var(--purple);
 }
 
 .header .navbar a {
   margin: 0 1rem;
   font-size: 1.7rem;
-  color: var(--rose);
+  color: var(--light-purple);
 }
 
 .header .navbar a:hover {
@@ -115,7 +96,7 @@ section {
 
 #menu-btn {
   font-size: 2.5rem;
-  color: var(--rose);
+  color: var(--light-purple);
   display: none;
 }
 
@@ -180,7 +161,7 @@ section {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--rose);
+  background: var(--purple);
 
 }
 
@@ -408,13 +389,13 @@ section {
 }
 
 .contact {
-  background: var(--rose);
+  background: var(--purple);
   padding-bottom: 3rem;
 }
 
 .contact .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -429,6 +410,14 @@ section {
   font-size: 2rem;
   padding: 1rem 0;
   color: var(--black);
+  
+}
+
+
+.contact .QR img {
+ width: 150px;
+ border-radius: 2rem;
+
 }
 
 .contact .box-container .box a:hover {
@@ -443,6 +432,12 @@ section {
 .contact .box-container .box a:hover i {
   padding-right: 2rem;
   color: white;
+}
+
+.contact .box-container .box img{
+  width: 150px;
+  border-radius: 2rem;
+
 }
 
 .dropdown {
@@ -513,7 +508,7 @@ section {
 .chart__bar {
   height: 30px;
   margin-bottom: 10px;
-  background: linear-gradient(to right, #4c86c4,var(--rose));
+  background: linear-gradient(to right, #4c86c4,var(--purple));
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
  
@@ -523,17 +518,6 @@ section {
   line-height: 30px;
   color: white;
   font-size: 1.5rem;
-}
-
-@keyframes anim-lightspeed-in {
-  0% {
-    transform: translateX(-200%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 
@@ -613,7 +597,7 @@ section {
   }
 
   .home img {
-    width: 35%;
+    width: 50%;
    
   }
 }
