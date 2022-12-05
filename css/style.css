@@ -343,60 +343,16 @@ section {
 }
 
 
-.contact .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.contact .row .map {
-  flex: 1 1 42rem;
-  width: 100%;
-  padding: 2rem;
-  box-shadow: var(--box-shadow);
-  border: var(--border);
-  border-radius: 0.5rem;
-}
-
-.contact .row form {
-  padding: 2rem;
-  flex: 1 1 42rem;
-  box-shadow: var(--box-shadow);
-  border: var(--border);
-  text-align: center;
-  border-radius: 0.5rem;
-}
-
-.contact .row form h3 {
-  font-size: 3rem;
-  color: var(--black);
-  padding-bottom: 1rem;
-}
-
-.contact .row form .box {
-  width: 100%;
-  border-radius: 0.5rem;
-  padding: 1rem 1.2rem;
-  font-size: 1.6rem;
-  text-transform: none;
-  border: var(--border);
-  margin: 0.7rem 0;
-}
-
-.contact .row form textarea {
-  height: 15rem;
-  resize: none;
-}
-
 .contact {
   background: var(--purple);
   padding-bottom: 3rem;
+  
 }
 
 .contact .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1.5rem;
 }
 
 .contact .box-container .box h3 {
@@ -413,13 +369,6 @@ section {
   
 }
 
-
-.contact .QR img {
- width: 150px;
- border-radius: 2rem;
-
-}
-
 .contact .box-container .box a:hover {
   color: white;
 }
@@ -432,12 +381,6 @@ section {
 .contact .box-container .box a:hover i {
   padding-right: 2rem;
   color: white;
-}
-
-.contact .box-container .box img{
-  width: 150px;
-  border-radius: 2rem;
-
 }
 
 .dropdown {
