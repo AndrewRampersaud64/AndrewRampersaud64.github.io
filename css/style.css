@@ -200,6 +200,7 @@ section {
 .projects .projects-slider .box video {
   height: 40rem;
   border-radius: 1.6rem;
+  
 }
 
 .projects .projects-slider .swiper-slide-active {
@@ -217,9 +218,11 @@ section {
 }
 
 .projects .recipe-website-video video {
+  border-radius: 1.6rem;
   width: 100%;
-  padding: 2rem 0rem;
-}
+  background-color: white;
+ margin-top: 2rem;
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;}
 
 .about h1 {
   color: var(--black);
@@ -441,7 +444,7 @@ section {
     left: 0;
     right: 0;
     background: var(--black);
-    border-radius: 10px;
+    border-radius: 1.6rem;
     border: #00ddff91 solid 5px;
     animation: flicker2 2s ease-in-out infinite alternate;
     margin: 1rem;
